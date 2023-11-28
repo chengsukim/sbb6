@@ -1,0 +1,19 @@
+<table>
+    <thead>
+
+    <tr>
+        <th>제목</th>
+        <th>작성일지</th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="question : $(questionlist)">
+        <td th:text="${question.subject}"></td>
+        <td th:text="${question.createDate}"></td>
+    </tr>
+
+
+    </tbody>
+</table>
